@@ -1,0 +1,10 @@
+This script is a simplistic script that allows you to specify artists that you follow,
+and then see a list of all of their releases in order from newest to oldest.
+
+Example:
+./tracker.py --json following.json > releases.txt
+
+To add artists:
+./tracker.py --json following.json --artists "Anamanaguchi" "Aesop Rock" "Tengger Cavalry"
+
+To manually add artists after a failed lookup, edit following.json and replace the 'null' with the correct Musicbrainz ID.
